@@ -56,7 +56,7 @@ async def incoming_message_f(client, message):
     g_id = message.from_user.id
     u_men = message.from_user.mention
     credit = await message.reply_text(
-        f"<b><b> ⚙ Lᴇᴇᴄʜɪɴɢ Fᴏʀ​ :</b></b> {u_men}", parse_mode="html"
+        f"<b><b> ⚙ Lᴇᴇᴄʜɪɴɢ Fᴏʀ​ :  {u_men}</b>", parse_mode="html"
     )
     # get link from the incoming message
     i_m_sefg = await message.reply_text("<code>Processing . . . 🔄</code>", quote=True)
