@@ -72,7 +72,7 @@ async def upload_to_tg(
         new_m_esg = message
         if not message.photo:
             new_m_esg = await message.reply_text(
-                f"<b><i>🛠 Extracting : </i></b> <code>{len(directory_contents)}</code> <b>File(s) <a href='tg://user?id={from_user}'></a></b>",
+                f"<b>🛠 Extracting : </b> <code>{len(directory_contents)}</code> <b>File(s) <a href='tg://user?id={from_user}'></a></b>",
                 quote=True
                 # reply_to_message_id=message.message_id
             )
@@ -326,7 +326,7 @@ async def upload_single_file(
         message_for_progress_display = message
         if not edit_media:
             message_for_progress_display = await message.reply_text(
-                "<b>🔰Status : <i>Starting Uploading...📤</i></b>\n\n🗃<b> File Name</b>: <code>{}</code>".format(os.path.basename(local_file_name))
+                "<b>🔰 Status : Starting Uploading...📤</b>\n\n🗃<b> File Name</b> : <code>{}</code>".format(os.path.basename(local_file_name))
             )
             prog = Progress(from_user, client, message_for_progress_display)
         sent_message = await message.reply_document(
@@ -356,7 +356,7 @@ async def upload_single_file(
             message_for_progress_display = message
             if not edit_media:
                 message_for_progress_display = await message.reply_text(
-                    "<b>🔰Status : <i>Starting Uploading...📤</i></b>\n\n🗃<b> File Name</b>: <code>{}</code>".format(os.path.basename(local_file_name))
+                    "<b>🔰 Status : Starting Uploading...📤</b>\n\n🗃<b> File Name</b> :  <code>{}</code>".format(os.path.basename(local_file_name))
                 )
                 prog = Progress(from_user, client, message_for_progress_display)
             if local_file_name.upper().endswith(("MKV", "MP4", "WEBM", "FLV", "3GP", "AVI", "MOV", "OGG", "WMV", "M4V", "TS", "MPG", "MTS", "M2TS")):
@@ -443,7 +443,7 @@ async def upload_single_file(
                         disable_notification=True,
                         progress=prog.progress_for_pyrogram,
                         progress_args=(
-                            f"<b>🔰Status : <i>Starting Uploading...📤</i></b>\n\n🗃<b> File Name</b>: `{os.path.basename(local_file_name)}`",
+                            f"<b>🔰 Status : Starting Uploading...📤</b>\n\n🗃<b> File Name</b> : `{os.path.basename(local_file_name)}`",
                             start_time,
                         ),
                     )
@@ -495,7 +495,7 @@ async def upload_single_file(
                         disable_notification=True,
                         progress=prog.progress_for_pyrogram,
                         progress_args=(
-                            f"<b>🔰Status : <i>Starting Uploading...📤</i></b>\n\n🗃<b> File Name</b>: `{os.path.basename(local_file_name)}`",
+                            f"<b>🔰 Status : Starting Uploading...📤</b>\n\n🗃<b> File Name</b> : `{os.path.basename(local_file_name)}`",
                             start_time,
                         ),
                     )
@@ -533,7 +533,7 @@ async def upload_single_file(
                         disable_notification=True,
                         progress=prog.progress_for_pyrogram,
                         progress_args=(
-                            f"<b>🔰Status : <i>Starting Uploading...📤</i></b>\n\n🗃<b> File Name</b>: `{os.path.basename(local_file_name)}`",
+                            f"<b>🔰 Status : Starting Uploading...📤</b>\n\n🗃<b> File Name</b> : `{os.path.basename(local_file_name)}`",
                             start_time,
                         ),
                     )
