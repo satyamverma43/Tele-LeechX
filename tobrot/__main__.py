@@ -82,7 +82,7 @@ botcmds = [
         (f'{BotCommands.PytdlCommand}','🧧 [Reply] YT-DL Playlists Links for Uploading...'),
         (f'{BotCommands.SaveCommand}','🖼 Save Thumbnail For Uploads'),
         (f'{BotCommands.ClearCommand}','🕹 Clear Thumbnail '),
-        (f'{BotCommands.RenameCommand}','😤 Don't Rename Here '),
+        (f'{BotCommands.RenameCommand}','♻️ [Reply] Rename Telegram File'),
         (f'{BotCommands.StatusCommand}','🖲 Show Bot stats and concurrent Downloads'),
         (f'{BotCommands.SpeedCommand}','📡 Get Current Server Speed of Your Bot'),
     ]
