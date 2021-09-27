@@ -73,7 +73,7 @@ from tobrot.plugins.status_message_fn import (
 )
 
 botcmds = [
-        (f'{BotCommands.LeechCommand}','📨 [Reply] Leech any Torrent/ Magnet/ Direct Link '),
+        (f'{BotCommands.LeechCommand}','📨 [Reply] Leech Only Direct Link | Index Link '),
         (f'{BotCommands.ToggleVidCommand}','🎥Upload as Video Format..'),
         (f'{BotCommands.ToggleDocCommand}','🗃️ Upload as Document Format...'),
         (f'{BotCommands.ExtractCommand}', '🔐 Unarchive items . .'),
@@ -82,7 +82,7 @@ botcmds = [
         (f'{BotCommands.PytdlCommand}','🧧 [Reply] YT-DL Playlists Links for Uploading...'),
         (f'{BotCommands.SaveCommand}','🖼 Save Thumbnail For Uploads'),
         (f'{BotCommands.ClearCommand}','🕹 Clear Thumbnail '),
-        (f'{BotCommands.RenameCommand}','♻️ [Reply] Rename Telegram File '),
+        (f'{BotCommands.RenameCommand}','😤 Don't Rename Here '),
         (f'{BotCommands.StatusCommand}','🖲 Show Bot stats and concurrent Downloads'),
         (f'{BotCommands.SpeedCommand}','📡 Get Current Server Speed of Your Bot'),
     ]
